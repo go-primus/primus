@@ -15,7 +15,6 @@ import (
 	"google.golang.org/grpc/health/grpc_health_v1"
 	"google.golang.org/grpc/reflection"
 
-	// apimd "github.com/go-kratos/kratos/v2/api/metadata"
 	"github.com/go-primus/primus/internal/endpoint"
 	"github.com/go-primus/primus/internal/host"
 	"github.com/go-primus/primus/internal/matcher"

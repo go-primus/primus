@@ -7,11 +7,11 @@ import (
 
 	"google.golang.org/grpc/codes"
 
-	"github.com/go-kratos/kratos/v2/errors"
-	"github.com/go-kratos/kratos/v2/log"
-	"github.com/go-kratos/kratos/v2/middleware"
-	"github.com/go-kratos/kratos/v2/transport"
-	"github.com/go-kratos/kratos/v2/transport/http/status"
+	"github.com/go-primus/primus/internal/errors"
+	"github.com/go-primus/primus/internal/errors/status"
+	"github.com/go-primus/primus/internal/log"
+	"github.com/go-primus/primus/pkg/middleware"
+	"github.com/go-primus/primus/pkg/transport"
 )
 
 // Redacter defines how to log an object

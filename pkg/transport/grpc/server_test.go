@@ -14,9 +14,9 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/go-kratos/kratos/v2/errors"
-	"github.com/go-kratos/kratos/v2/internal/matcher"
-	pb "github.com/go-kratos/kratos/v2/internal/testdata/helloworld"
+	"github.com/go-primus/primus/internal/errors"
+	"github.com/go-primus/primus/internal/matcher"
+	pb "github.com/go-primus/primus/internal/testdata/helloworld"
 	"github.com/go-primus/primus/pkg/middleware"
 	"github.com/go-primus/primus/pkg/transport"
 )
@@ -136,13 +136,13 @@ func testClient(t *testing.T, srv *Server) {
 		t.Fatal(err)
 	}
 	client := pb.NewGreeterClient(conn)
-	reply, err := client.SayHello(context.Background(), &pb.HelloRequest{Name: "kratos"})
+	reply, err := client.SayHello(context.Background(), &pb.HelloRequest{Name: "primus"})
 	t.Log(err)
 	if err != nil {
 		t.Errorf("failed to call: %v", err)
 	}
-	if !reflect.DeepEqual(reply.Message, "Hello kratos") {
-		t.Errorf("expect %s, got %s", "Hello kratos", reply.Message)
+	if !reflect.DeepEqual(reply.Message, "Hello primus") {
+		t.Errorf("expect %s, got %s", "Hello primus", reply.Message)
 	}
 
 	streamCli, err := client.SayHelloStream(context.Background())

@@ -6,9 +6,9 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/go-kratos/kratos/v2/log"
-	"github.com/go-kratos/kratos/v2/middleware"
-	"github.com/go-kratos/kratos/v2/transport"
+	"github.com/go-primus/primus/internal/log"
+	"github.com/go-primus/primus/pkg/middleware"
+	"github.com/go-primus/primus/pkg/transport"
 )
 
 var _ transport.Transporter = (*Transport)(nil)
