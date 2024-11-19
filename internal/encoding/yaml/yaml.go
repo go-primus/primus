@@ -1,7 +1,7 @@
 package yaml
 
 import (
-	"github.com/go-primus/primus/pkg/encoding"
+	"github.com/go-primus/primus/internal/encoding"
 	"gopkg.in/yaml.v3"
 )
 

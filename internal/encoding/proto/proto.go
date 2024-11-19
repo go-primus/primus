@@ -6,7 +6,7 @@ import (
 	"errors"
 	"reflect"
 
-	"github.com/go-primus/primus/pkg/encoding"
+	"github.com/go-primus/primus/internal/encoding"
 	"google.golang.org/protobuf/proto"
 )
 

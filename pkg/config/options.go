@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/go-primus/primus/pkg/encoding"
+	"github.com/go-primus/primus/internal/encoding"
 )
 
 // Decoder is config decoder.

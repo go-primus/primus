@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"dario.cat/mergo"
-	"github.com/go-primus/primus/pkg/encoding"
+	"github.com/go-primus/primus/internal/encoding"
 )
 
 func TestReader_Merge(t *testing.T) {

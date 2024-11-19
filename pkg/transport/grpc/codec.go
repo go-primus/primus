@@ -6,8 +6,8 @@ import (
 	"google.golang.org/grpc/encoding"
 	"google.golang.org/protobuf/proto"
 
-	enc "github.com/go-primus/primus/pkg/encoding"
-	"github.com/go-primus/primus/pkg/encoding/json"
+	enc "github.com/go-primus/primus/internal/encoding"
+	"github.com/go-primus/primus/internal/encoding/json"
 )
 
 func init() {

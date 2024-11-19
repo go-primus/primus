@@ -11,10 +11,10 @@ import (
 	"dario.cat/mergo"
 
 	// init encoding
-	_ "github.com/go-primus/primus/pkg/encoding/json"
-	_ "github.com/go-primus/primus/pkg/encoding/proto"
-	_ "github.com/go-primus/primus/pkg/encoding/xml"
-	_ "github.com/go-primus/primus/pkg/encoding/yaml"
+	_ "github.com/go-primus/primus/internal/encoding/json"
+	_ "github.com/go-primus/primus/internal/encoding/proto"
+	_ "github.com/go-primus/primus/internal/encoding/xml"
+	_ "github.com/go-primus/primus/internal/encoding/yaml"
 )
 
 var _ Config = (*config)(nil)

@@ -10,7 +10,7 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	primusjson "github.com/go-primus/primus/pkg/encoding/json"
+	primusjson "github.com/go-primus/primus/internal/encoding/json"
 )
 
 var (
